@@ -57,7 +57,6 @@ function onLoad() {
 // RANDOM number generator
 function getRandomNumber() {
     randomNumber = Math.floor(Math.random() * 100);
-    console.log(randomNumber);
 }
 
 // CLEARS user input field
@@ -93,7 +92,6 @@ function evaluateGuess() {
 function nanCheck() {
     var guessNum = userInput.value;
     if (isNaN(parseInt(guessNum)) == true) {
-        console.log("nan found")
         userResultText.innerText = "That is not a number!";
         lastGuessText.innerText = "Error";
         lastGuessNum.innerText = 'X';
